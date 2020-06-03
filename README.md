@@ -36,6 +36,7 @@ Emitted code:
 ```
 ### 2 ### static (inside,dmz) 172.16.100.10  access-list nat-policy-for-host01
 ### 3 ### access-list nat-policy-for-host01 extended permit ip host 192.168.100.10 host 10.0.0.1
+
 set security nat source pool 172_16_100_10 address 172.16.100.10/32
 set security nat destination pool 192_168_100_10 address 192.168.100.10/32
 
@@ -52,3 +53,5 @@ set security nat destination rule-set from__dmz__to__inside rule from__dmz__to__
 set security nat destination rule-set from__dmz__to__inside rule from__dmz__to__inside_1 match destination-address 172.16.100.10/32
 set security nat destination rule-set from__dmz__to__inside rule from__dmz__to__inside_1 then destination-nat pool 192_168_100_10
 ```
+
+
