@@ -12,7 +12,7 @@ static (dmz,outside) 10.0.0.100 172.32.0.100 netmask 255.255.255.255
 you would see something like this in the output:
 
 ```
-\### 5 ### static (dmz,outside) 10.0.0.100 172.32.0.100 netmask 255.255.255.255
+### 5 ### static (dmz,outside) 10.0.0.100 172.32.0.100 netmask 255.255.255.255
 set security nat static rule-set from__outside__to__dmz from zone outside
 set security nat static rule-set from__outside__to__dmz rule from__outside__to__dmz_1 description static_nat_from__outside__to__dmz__line#_5
 set security nat static rule-set from__outside__to__dmz rule from__outside__to__dmz_1 match destination-address 10.0.0.100/32
