@@ -55,3 +55,13 @@ set security nat destination rule-set from__dmz__to__inside rule from__dmz__to__
 ```
 
 
+
+## Running the code
+
+From the cli type:
+
+```
+python asa2srx <asa-config-file>
+```
+
+
